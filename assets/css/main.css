@@ -1,0 +1,183 @@
+
+* {
+    box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background: #fff;
+    color: #555; */
+    font-size: 14px;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+td, th, caption {
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    color: #999;
+    text-decoration: none;
+}
+a:hover {
+    /* text-decoration: underline; */
+    color: #999;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+.demo-carousel img:hover,
+.article-img img:hover {
+    transform: scale(1.03);
+}
+input {
+  border: 1px solid #E1E1E1;
+}
+input:hover {
+  border: 1px solid #FA322B;
+}
+input:focus {
+  border: 1px solid #FA322B;
+  outline:none;
+}
+ol, ul, li {
+    list-style: none;
+}
+input, textarea, select, button {
+    font: 14px "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+table {
+    border-collapse: collapse;
+}
+html {
+    overflow-y: scroll;
+}
+.clearfix:before, 
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* 公共样式 */
+body{
+    min-width: 1200px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*  */
+.js-main {
+  padding: 0 15px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  width: calc(100% - 15px * 2);
+}
+
+.js-main .js-home-main {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.js-main .js-home-main .js-left {
+  width: 770px;
+  float: left;
+}
+
+.js-main .js-home-main .js-right {
+  width: 370px;
+  float: right;
+}
+.ivu-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* loading */
+
+.js-loading {
+  height: 48px;
+  text-align: center;
+}
+
+.js-loading a {
+  height: 34px;
+  width: 100%;
+  padding-top: 30px;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  background: #F5F5F5;
+}
+
+.loading {
+  height: 48px;
+}
+
+.loading .bounce1 {
+  animation-delay: -0.32s;
+}
+
+.loading .bounce2 {
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.loading>div {
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  background: #999;
+  border-radius: 100%;
+  display: inline-block;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  animation-fill-mode: both;
+}
